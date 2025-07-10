@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+@theme {
+  /* Font Families */
+  --font-family-display: var(--font-display), sans-serif;
+  --font-family-body: var(--font-body), sans-serif;
+
+  /* Colors */
+  /* Primary & On-Primary */
+  --color-primary: #1E3A5F;
+  --color-primary-foreground: #F8F5E8;
+  
+  /* Secondary */
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  
+  /* Destructive */
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  
+  /* Muted */
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  
+  /* Accent */
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  
+  /* Popover */
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  
+  /* Card */
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  /* Semantic Colors with On-Colors */
+  --color-success: #A7C080;
+  --color-on-success: #F8F5E8;
+  --color-warning: #D8C3A5;
+  --color-on-warning: #1E3A5F;
+  --color-danger: #E63946;
+  --color-on-danger: #F8F5E8;
+  --color-info: #6F4E37;
+  --color-on-info: #F8F5E8;
+  --color-complete: #FADADD;
+  --color-on-complete: #1E3A5F;
+
+  /* Neutrals */
+  --color-white: #FFFFFF;
+  --color-rice-paper: #F8F5E8;
+  --color-soft-gray: #A8A8A8;
+  --color-deep-brown: #6F4E37;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem;  /* 8px */
+  --spacing-md: 1rem;    /* 16px */
+  --spacing-lg: 2rem;    /* 32px */
+  --spacing-xl: 3rem;    /* 48px */
+  --spacing-xxl: 4rem;   /* 64px */
+
+  /* Box Shadows */
+  --shadow-1: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-2: 0 2px 6px rgba(0,0,0,0.10);
+  --shadow-3: 0 4px 12px rgba(0,0,0,0.12);
+  --shadow-4: 0 8px 16px rgba(0,0,0,0.14);
+
+  /* Font Sizes */
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.75rem;
+  --font-size-h4: 1.5rem;
+  --font-size-body: 1rem;
+  --font-size-small: 0.875rem;
+  --font-size-caption: 0.75rem;
+
+  /* Line Heights */
+  --line-height-h1: 1.2;
+  --line-height-h2: 1.3;
+  --line-height-h3: 1.4;
+  --line-height-h4: 1.4;
+  --line-height-body: 1.6;
+  --line-height-small: 1.4;
+  --line-height-caption: 1.4;
+
+  /* Font Weights */
+  --font-weight-h1: 700;
+  --font-weight-h2: 600;
+  --font-weight-h3: 500;
+  --font-weight-h4: 400;
+  --font-weight-body: 400;
+  --font-weight-small: 300;
+  --font-weight-caption: 200;
+
+  /* Animations */
+  --animate-fade-in: fadeIn 0.5s ease-in-out;
+  --animate-slide-up: slideUp 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { 
+    transform: translateY(20px); 
+    opacity: 0; 
+  }
+  100% { 
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+/* CSS Custom Properties for dynamic values */
+:root {
+  --secondary: 210 40% 98%;
+  --secondary-foreground: 222.2 84% 4.9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+} 
