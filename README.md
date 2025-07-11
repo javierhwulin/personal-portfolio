@@ -5,6 +5,7 @@
 [![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/75d25491-7e25-4ffa-883b-28848cb9a109/deploy-status)](https://app.netlify.com/projects/javierhwulin-portfolio/deploys)
 
 ## 🚀 Live Demo
 
