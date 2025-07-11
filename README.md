@@ -18,7 +18,6 @@
 - **♿ Accessible**: WCAG compliant with proper ARIA labels and semantic HTML
 - **🔍 SEO Ready**: Optimized meta tags, structured data, and automatic sitemap
 - **🎭 Interactive**: Smooth animations and hover effects for engaging UX
-- **📊 Analytics Ready**: Easy integration with tracking platforms
 
 ## 🛠️ Tech Stack
 
@@ -164,14 +163,6 @@ npm run build
 npm run build
 # Upload `dist/` folder to gh-pages branch
 ```
-
-### Pre-Deployment Checklist
-
-- [ ] Update `site` URL in `astro.config.mjs`
-- [ ] Replace placeholder demo links in projects
-- [ ] Add analytics tracking (optional)
-- [ ] Test production build locally
-- [ ] Verify all links and contact forms work
 
 ## 🔧 Development
 
