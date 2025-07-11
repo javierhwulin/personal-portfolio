@@ -15,8 +15,8 @@ export default function Header() {
       <div className="container mx-auto px-lg max-w-6xl relative">
         <div className="flex items-center justify-between h-18">
           {/* Logo and Name - Minimalist */}
-          <div className="flex items-center gap-md">
-            <div className="w-11 h-11 bg-primary rounded-lg flex items-center justify-center shadow-1">
+          <div className="flex items-center gap-md group cursor-pointer">
+            <div className="w-11 h-11 bg-primary rounded-lg flex items-center justify-center shadow-1 transition-transform duration-300 ease-out group-hover:rotate-3 group-hover:scale-105">
               <Brain className="text-primary-foreground" size={20} />
             </div>
             <div className="flex flex-col">

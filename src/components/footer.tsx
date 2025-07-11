@@ -99,7 +99,7 @@ export default function Footer() {
             <p className="font-body text-rice-paper/60 text-small">
               © 2025 Javier Hengda. All rights reserved. Built with <Heart className="inline w-4 h-4 text-rice-paper/60 mx-1" />{" "}
               and cutting-edge AI.
-            </p>
+            </p>Latest
 
             <button
               onClick={scrollToTop}
