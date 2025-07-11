@@ -1,0 +1,207 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="TailwindCSS 4 Portfolio Setup">
+  <main class="min-h-screen p-lg">
+    <div class="max-w-4xl mx-auto">
+      <!-- Header with enhanced animations -->
+      <header class="text-center mb-xl stagger-animation">
+        <h1
+          class="font-display text-h1 font-bold text-primary mb-md animate-fade-in"
+        >
+          TailwindCSS 4 Setup Complete
+        </h1>
+        <p class="font-body text-deep-brown text-balance">
+          Modern CSS-based configuration with enhanced features is working!
+        </p>
+        <div class="mt-md">
+          <span
+            class="font-display inline-block px-lg py-sm bg-primary text-primary-foreground rounded-lg hover-lift"
+          >
+            🎯 Portfolio Ready
+          </span>
+        </div>
+      </header>
+
+      <!-- Color Palette Demo with enhanced interactions -->
+      <section class="mb-xl">
+        <h2 class="font-display text-h2 font-semibold mb-lg">
+          Custom Color Palette
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-md">
+          <div
+            class="bg-primary text-primary-foreground p-md rounded-lg text-center hover-lift"
+          >
+            <div class="font-display font-semibold">Primary</div>
+            <div class="font-body text-small">#1E3A5F</div>
+          </div>
+          <div
+            class="bg-success text-on-success p-md rounded-lg text-center hover-lift"
+          >
+            <div class="font-display font-semibold">Success</div>
+            <div class="font-body text-small">#A7C080</div>
+          </div>
+          <div
+            class="bg-warning text-on-warning p-md rounded-lg text-center hover-lift"
+          >
+            <div class="font-display font-semibold">Warning</div>
+            <div class="font-body text-small">#D8C3A5</div>
+          </div>
+          <div
+            class="bg-danger text-on-danger p-md rounded-lg text-center hover-lift"
+          >
+            <div class="font-display font-semibold">Danger</div>
+            <div class="font-body text-small">#E63946</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Typography Demo with text utilities -->
+      <section class="mb-xl">
+        <h2 class="font-display text-h2 font-semibold mb-lg">
+          Enhanced Typography
+        </h2>
+        <div class="space-y-md bg-white p-lg rounded-lg shadow-2">
+          <h1 class="font-display text-h1 text-balance">
+            Heading 1 - Balanced Text Layout
+          </h1>
+          <h2 class="font-display text-h2">Heading 2 - Clean and Modern</h2>
+          <h3 class="font-display text-h3">Heading 3 - Professional Look</h3>
+          <h4 class="font-display text-h4">Heading 4 - Subtle Hierarchy</h4>
+          <p class="font-body text-balance">
+            Body text with balanced wrapping for better readability and enhanced
+            user experience in your portfolio.
+          </p>
+          <p class="font-body text-small line-clamp-3">
+            Small text with line clamping utility that truncates content after
+            three lines. This is useful for card previews, descriptions, and
+            other content that needs to fit in specific containers while
+            maintaining visual consistency.
+          </p>
+          <p class="font-body text-caption">
+            Caption text - Perfect for metadata and secondary information
+          </p>
+        </div>
+      </section>
+
+      <!-- Animation Showcase -->
+      <section class="mb-xl">
+        <h2 class="font-display text-h2 font-semibold mb-lg">
+          Enhanced Animations
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md">
+          <div
+            class="bg-complete text-on-complete p-lg rounded-lg animate-fade-in shadow-2"
+          >
+            <h3 class="font-display font-semibold mb-sm">Fade In</h3>
+            <p class="font-body text-small">Smooth entrance animation</p>
+          </div>
+          <div
+            class="bg-info text-on-info p-lg rounded-lg animate-slide-up shadow-2"
+          >
+            <h3 class="font-display font-semibold mb-sm">Slide Up</h3>
+            <p class="font-body text-small">Elegant upward motion</p>
+          </div>
+          <div
+            class="bg-secondary text-secondary-foreground p-lg rounded-lg animate-float shadow-2"
+          >
+            <h3 class="font-display font-semibold mb-sm">Float</h3>
+            <p class="font-body text-small">Gentle floating effect</p>
+          </div>
+          <div
+            class="bg-muted text-muted-foreground p-lg rounded-lg animate-pulse-slow shadow-2"
+          >
+            <h3 class="font-display font-semibold mb-sm">Pulse Slow</h3>
+            <p class="font-body text-small">Subtle breathing animation</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Elements with Texture -->
+      <section class="mb-xl">
+        <h2 class="font-display text-h2 font-semibold mb-lg">
+          Interactive Elements
+        </h2>
+        <div class="relative bg-rice-paper p-xl rounded-lg texture-overlay">
+          <div class="relative z-10">
+            <h3 class="font-display text-h3 mb-lg">Textured Background</h3>
+            <p class="font-body mb-lg text-balance">
+              This section demonstrates the subtle texture overlay that adds
+              depth and visual interest to your portfolio sections.
+            </p>
+            <div class="flex flex-wrap gap-md">
+              <button
+                class="px-lg py-md bg-primary text-primary-foreground rounded-lg hover-lift focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+              >
+                Primary Button
+              </button>
+              <button
+                class="px-lg py-md bg-accent text-accent-foreground rounded-lg hover-lift focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+              >
+                Accent Button
+              </button>
+              <a
+                href="#"
+                class="px-lg py-md bg-transparent border-2 border-primary text-primary rounded-lg hover-lift focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+              >
+                Link Button
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shadow Variations -->
+      <section class="mb-xl">
+        <h2 class="font-display text-h2 font-semibold mb-lg">Shadow System</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-md">
+          <div class="bg-white p-md rounded-lg shadow-1 text-center hover-lift">
+            <div class="font-display font-semibold">Shadow 1</div>
+            <div class="text-small text-muted-foreground">Subtle</div>
+          </div>
+          <div class="bg-white p-md rounded-lg shadow-2 text-center hover-lift">
+            <div class="font-display font-semibold">Shadow 2</div>
+            <div class="text-small text-muted-foreground">Light</div>
+          </div>
+          <div class="bg-white p-md rounded-lg shadow-3 text-center hover-lift">
+            <div class="font-display font-semibold">Shadow 3</div>
+            <div class="text-small text-muted-foreground">Medium</div>
+          </div>
+          <div class="bg-white p-md rounded-lg shadow-4 text-center hover-lift">
+            <div class="font-display font-semibold">Shadow 4</div>
+            <div class="text-small text-muted-foreground">Strong</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Staggered Animation Demo -->
+      <section class="mb-xl">
+        <h2 class="font-display text-h2 font-semibold mb-lg">
+          Staggered Animations
+        </h2>
+        <div class="stagger-animation grid grid-cols-1 md:grid-cols-3 gap-md">
+          <div class="bg-card text-card-foreground p-lg rounded-lg shadow-2">
+            <h3 class="font-display font-semibold mb-sm">Feature 1</h3>
+            <p class="font-body text-small">Animates with delay</p>
+          </div>
+          <div class="bg-card text-card-foreground p-lg rounded-lg shadow-2">
+            <h3 class="font-display font-semibold mb-sm">Feature 2</h3>
+            <p class="font-body text-small">Appears after Feature 1</p>
+          </div>
+          <div class="bg-card text-card-foreground p-lg rounded-lg shadow-2">
+            <h3 class="font-display font-semibold mb-sm">Feature 3</h3>
+            <p class="font-body text-small">Last to animate</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="text-center py-xl">
+        <p class="font-body text-muted-foreground mb-lg">
+          ✨ Your portfolio is ready with TailwindCSS 4 and enhanced features!
+        </p>
+      </footer>
+    </div>
+  </main>
+</Layout>

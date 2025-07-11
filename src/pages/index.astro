@@ -1,105 +1,29 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Header from "@/components/header";
+import Hero from "@/components/hero";
+import Skills from "@/components/skills";
+import Projects from "@/components/projects";
+// import Research from "@/components/research";
+import Experience from "@/components/experience";
+import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 ---
 
-<Layout title="TailwindCSS 4 Test">
-  <main class="min-h-screen p-lg">
-    <div class="max-w-4xl mx-auto">
-      <!-- Header -->
-      <header class="text-center mb-xl">
-        <h1 class="text-h1 font-bold text-primary mb-md">
-          TailwindCSS 4 Setup Complete
-        </h1>
-        <p class="text-body text-deep-brown">
-          Modern CSS-based configuration is working!
-        </p>
-      </header>
-
-      <!-- Color Palette Demo -->
-      <section class="mb-xl">
-        <h2 class="text-h2 font-semibold mb-lg">Custom Color Palette</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-md">
-          <div
-            class="bg-primary text-primary-foreground p-md rounded-lg text-center"
-          >
-            <div class="font-semibold">Primary</div>
-            <div class="text-small">#1E3A5F</div>
-          </div>
-          <div class="bg-success text-on-success p-md rounded-lg text-center">
-            <div class="font-semibold">Success</div>
-            <div class="text-small">#A7C080</div>
-          </div>
-          <div class="bg-warning text-on-warning p-md rounded-lg text-center">
-            <div class="font-semibold">Warning</div>
-            <div class="text-small">#D8C3A5</div>
-          </div>
-          <div class="bg-danger text-on-danger p-md rounded-lg text-center">
-            <div class="font-semibold">Danger</div>
-            <div class="text-small">#E63946</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Typography Demo -->
-      <section class="mb-xl">
-        <h2 class="text-h2 font-semibold mb-lg">Custom Typography</h2>
-        <div class="space-y-md">
-          <h1 class="text-h1">Heading 1 - 2.5rem</h1>
-          <h2 class="text-h2">Heading 2 - 2rem</h2>
-          <h3 class="text-h3">Heading 3 - 1.75rem</h3>
-          <h4 class="text-h4">Heading 4 - 1.5rem</h4>
-          <p class="text-body">Body text - 1rem with line height 1.6</p>
-          <p class="text-small">Small text - 0.875rem</p>
-          <p class="text-caption">Caption text - 0.75rem</p>
-        </div>
-      </section>
-
-      <!-- Spacing Demo -->
-      <section class="mb-xl">
-        <h2 class="text-h2 font-semibold mb-lg">Custom Spacing</h2>
-        <div class="bg-white p-lg rounded-lg shadow-2">
-          <div class="bg-soft-gray p-xs mb-sm rounded">xs - 4px</div>
-          <div class="bg-soft-gray p-sm mb-md rounded">sm - 8px</div>
-          <div class="bg-soft-gray p-md mb-lg rounded">md - 16px</div>
-          <div class="bg-soft-gray p-lg mb-xl rounded">lg - 32px</div>
-          <div class="bg-soft-gray p-xl rounded">xl - 48px</div>
-        </div>
-      </section>
-
-      <!-- Shadow Demo -->
-      <section class="mb-xl">
-        <h2 class="text-h2 font-semibold mb-lg">Custom Shadows</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-md">
-          <div class="bg-white p-md rounded-lg shadow-1 text-center">
-            Shadow 1
-          </div>
-          <div class="bg-white p-md rounded-lg shadow-2 text-center">
-            Shadow 2
-          </div>
-          <div class="bg-white p-md rounded-lg shadow-3 text-center">
-            Shadow 3
-          </div>
-          <div class="bg-white p-md rounded-lg shadow-4 text-center">
-            Shadow 4
-          </div>
-        </div>
-      </section>
-
-      <!-- Animation Demo -->
-      <section>
-        <h2 class="text-h2 font-semibold mb-lg">Custom Animations</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
-          <div
-            class="bg-complete text-on-complete p-lg rounded-lg animate-fade-in"
-          >
-            Fade In Animation
-          </div>
-          <div class="bg-info text-on-info p-lg rounded-lg animate-slide-up">
-            Slide Up Animation
-          </div>
-        </div>
-      </section>
-    </div>
+<Layout
+  title="Javier Hengda - Computer Engineer Portfolio"
+  description="AI/ML Engineer & Full-Stack Developer"
+>
+  <Header client:load />
+  <main>
+    <Hero />
+    <Skills />
+    <Projects client:visible />
+    <Experience />
+    <Contact client:visible />
+    <!-- 
+    <Research />
+    -->
   </main>
+  <Footer client:visible />
 </Layout>
-
