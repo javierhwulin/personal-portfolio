@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://your-domain.com', // Update this with your actual domain
+  site: 'https://javierhwulin-portfolio.netlify.app/',
   vite: {
     plugins: [tailwindcss()],
   },

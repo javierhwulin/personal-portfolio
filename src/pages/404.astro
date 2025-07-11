@@ -6,23 +6,245 @@ import Layout from "../layouts/Layout.astro";
   title="Page Not Found - Javier Hengda"
   description="The page you're looking for doesn't exist."
 >
-  <main class="flex-1 flex items-center justify-center py-xl">
-    <div class="text-center max-w-lg mx-auto px-lg">
-      <h1 class="font-display text-6xl font-bold text-primary mb-md">404</h1>
-      <h2 class="font-display text-h2 font-bold text-deep-brown mb-md">
-        Page Not Found
-      </h2>
-      <p class="font-body text-deep-brown/70 mb-lg leading-relaxed">
-        Sorry, the page you're looking for doesn't exist. It might have been
-        moved or deleted.
-      </p>
-      <a
-        href="/"
-        class="inline-flex items-center justify-center px-lg py-md bg-primary text-primary-foreground rounded-xl font-body font-medium hover:bg-deep-brown transition-all duration-300 shadow-2 hover-lift focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+  <main
+    class="flex-1 flex items-center justify-center py-xl relative overflow-hidden"
+  >
+    {/* Subtle background with texture */}
+    <div
+      class="absolute inset-0 bg-gradient-to-br from-rice-paper via-white to-rice-paper texture-overlay"
+    >
+    </div>
+
+    {/* Floating background elements */}
+    <div class="absolute inset-0 pointer-events-none">
+      <div
+        class="absolute top-[10%] left-[10%] w-16 h-16 bg-primary/10 rounded-full animate-float"
+        style="animation-delay: 0s;"
       >
-        Go Home
-      </a>
+      </div>
+      <div
+        class="absolute top-[20%] right-[15%] w-8 h-8 bg-deep-brown/10 rounded-full animate-float"
+        style="animation-delay: 1s;"
+      >
+      </div>
+      <div
+        class="absolute bottom-[30%] left-[20%] w-12 h-12 bg-success/10 rounded-full animate-float"
+        style="animation-delay: 2s;"
+      >
+      </div>
+      <div
+        class="absolute bottom-[20%] right-[10%] w-6 h-6 bg-warning/20 rounded-full animate-float"
+        style="animation-delay: 3s;"
+      >
+      </div>
+      <div
+        class="absolute top-[60%] left-[5%] w-4 h-4 bg-primary/20 rounded-full animate-float"
+        style="animation-delay: 0.5s;"
+      >
+      </div>
+      <div
+        class="absolute top-[40%] right-[25%] w-10 h-10 bg-deep-brown/5 rounded-full animate-float"
+        style="animation-delay: 1.5s;"
+      >
+      </div>
+    </div>
+
+    <div class="text-center max-w-4xl mx-auto px-lg relative stagger-animation">
+      {/* 404 Number with enhanced styling */}
+      <div class="relative mb-lg animate-fade-in">
+        <h1
+          class="font-display text-9xl lg:text-[12rem] font-bold text-primary mb-0 leading-none select-none"
+        >
+          404
+        </h1>
+        <div
+          class="absolute inset-0 font-display text-9xl lg:text-[12rem] font-bold text-primary/10 blur-sm select-none"
+        >
+          404
+        </div>
+      </div>
+
+      {/* Main heading */}
+      <h2
+        class="font-display text-h2 lg:text-h1 font-bold text-deep-brown mb-md animate-slide-up"
+      >
+        Oops! Page Not Found
+      </h2>
+
+      {/* Description */}
+      <p
+        class="font-body text-body lg:text-h4 text-deep-brown/70 mb-xl leading-relaxed max-w-2xl mx-auto animate-slide-up"
+      >
+        It seems like you've ventured into uncharted territory. The page you're
+        looking for might have been moved, deleted, or perhaps it never existed
+        in the first place.
+      </p>
+
+      {/* Error code with icon */}
+      <div
+        class="inline-flex items-center gap-sm px-lg py-md bg-white rounded-xl shadow-2 border border-soft-gray/20 mb-xl animate-slide-up"
+      >
+        <svg
+          class="w-5 h-5 text-primary"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"
+          ></path>
+        </svg>
+        <span class="font-body text-small font-medium text-deep-brown"
+          >Error 404: Resource Not Found</span
+        >
+      </div>
+
+      {/* Navigation options */}
+      <div class="space-y-lg animate-slide-up">
+        {/* Primary CTA */}
+        <div
+          class="flex flex-col sm:flex-row gap-md justify-center items-center"
+        >
+          <a
+            href="/"
+            class="no-underline inline-flex items-center justify-center px-xl py-md bg-primary text-primary-foreground rounded-xl font-body font-medium hover:bg-deep-brown transition-all duration-300 shadow-2 hover-lift focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 min-w-48"
+          >
+            <svg
+              class="w-5 h-5 mr-sm"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              ></path>
+            </svg>
+            Go Home
+          </a>
+
+          <button
+            onclick="history.back()"
+            class="inline-flex items-center justify-center px-xl py-md border-2 border-primary text-primary rounded-xl font-body font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover-lift focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 min-w-48"
+          >
+            <svg
+              class="w-5 h-5 mr-sm"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"
+              ></path>
+            </svg>
+            Go Back
+          </button>
+        </div>
+
+        {/* Quick navigation links */}
+        <div class="border-t border-soft-gray/20 pt-lg">
+          <p class="font-body text-small text-deep-brown/60 mb-md">
+            Or explore these sections:
+          </p>
+          <div class="flex flex-wrap gap-md justify-center">
+            {
+              [
+                {
+                  href: "/#about",
+                  label: "About Me",
+                  icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z",
+                },
+                {
+                  href: "/#projects",
+                  label: "Projects",
+                  icon: "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+                },
+                {
+                  href: "/#experience",
+                  label: "Experience",
+                  icon: "M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0H8m8 0v2a2 2 0 01-2 2H10a2 2 0 01-2-2V6m8 0H8",
+                },
+                {
+                  href: "/#skills",
+                  label: "Skills",
+                  icon: "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+                },
+                {
+                  href: "/#contact",
+                  label: "Contact",
+                  icon: "M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
+                },
+              ].map((link) => (
+                <a
+                  href={link.href}
+                  class="no-underline inline-flex items-center gap-sm px-md py-sm bg-white rounded-lg shadow-1 border border-soft-gray/20 hover-lift transition-all duration-300 hover:shadow-2 text-decoration-none"
+                >
+                  <svg
+                    class="w-4 h-4 text-primary"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d={link.icon}
+                    />
+                  </svg>
+                  <span class="font-body text-small font-medium text-deep-brown">
+                    {link.label}
+                  </span>
+                </a>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+
+      {/* Fun message */}
+      <div class="mt-xl pt-lg border-t border-soft-gray/20 animate-slide-up">
+        <p class="font-body text-small text-deep-brown/50 italic">
+          "In the world of AI and machine learning, even the best models
+          sometimes predict the wrong path. But that's how we learn and
+          improve!"
+        </p>
+      </div>
     </div>
   </main>
 </Layout>
 
+<script>
+  // Add some interactive effects
+  document.addEventListener("DOMContentLoaded", () => {
+    // Add stagger animation to elements
+    const elements = document.querySelectorAll(".stagger-animation > *");
+    elements.forEach((el, index) => {
+      (el as HTMLElement).style.animationDelay = `${index * 0.1}s`;
+    });
+
+    // Add mousemove effect to floating elements
+    const floatingElements = document.querySelectorAll(
+      '[class*="animate-float"]'
+    );
+    document.addEventListener("mousemove", (e) => {
+      const mouseX = e.clientX / window.innerWidth;
+      const mouseY = e.clientY / window.innerHeight;
+
+      floatingElements.forEach((el, index) => {
+        const speed = (index + 1) * 0.5;
+        const x = (mouseX - 0.5) * speed;
+        const y = (mouseY - 0.5) * speed;
+        (el as HTMLElement).style.transform = `translate(${x}px, ${y}px)`;
+      });
+    });
+  });
+</script>

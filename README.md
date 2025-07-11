@@ -9,7 +9,7 @@
 
 ## 🚀 Live Demo
 
-**[View Portfolio →](https://your-domain.com)**
+**[View Portfolio →](https://javierhwulin-portfolio.netlify.app/)**
 
 ## ✨ Features
 
@@ -225,7 +225,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👤 Author
 
 **Javier Hengda Wu Lin**
-- Portfolio: [https://your-domain.com](https://your-domain.com)
+- Portfolio: [https://javierhwulin-portfolio.netlify.app/](https://javierhwulin-portfolio.netlify.app/)
 - GitHub: [@javierhwulin](https://github.com/javierhwulin)
 - LinkedIn: [Javier Hengda Wu Lin](https://www.linkedin.com/in/javier-hengda-wu-lin-51a98a189/)
 - Twitter: [@hengda_wu](https://x.com/hengda_wu)
